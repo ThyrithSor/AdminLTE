@@ -1,0 +1,16 @@
+.input-group {
+	.input-group-addon {
+		&:first-child {
+			.border-right-radius(0);
+		}
+		&:last-child {
+			.border-left-radius(0);
+		}
+	}
+
+	.input-group-btn:last-child {
+		button.btn {
+			.border-right-radius(@input-radius);
+		}
+	}
+}

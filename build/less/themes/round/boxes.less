@@ -20,7 +20,7 @@
 
 .box {
     @color-lighten: 30%;
-
+    border-top: 0;
     .make-box-header(@i: length(@brand-colors)) when (@i > 0) {
         @brand: extract(extract(@brand-colors, @i), 1);
         @color: extract(extract(@brand-colors, @i), 2);
