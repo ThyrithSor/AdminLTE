@@ -61,6 +61,10 @@
 .skin-yellow-light .left-side {
   background-color: #f9fafc;
 }
+.skin-yellow-light .content-wrapper,
+.skin-yellow-light .main-footer {
+  border-left: 1px solid #d2d6de;
+}
 .skin-yellow-light .main-sidebar {
   border-right: 1px solid #d2d6de;
 }

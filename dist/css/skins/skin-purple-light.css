@@ -61,6 +61,10 @@
 .skin-purple-light .left-side {
   background-color: #f9fafc;
 }
+.skin-purple-light .content-wrapper,
+.skin-purple-light .main-footer {
+  border-left: 1px solid #d2d6de;
+}
 .skin-purple-light .main-sidebar {
   border-right: 1px solid #d2d6de;
 }

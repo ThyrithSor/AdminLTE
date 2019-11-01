@@ -81,6 +81,10 @@
 .skin-black-light .left-side {
   background-color: #f9fafc;
 }
+.skin-black-light .content-wrapper,
+.skin-black-light .main-footer {
+  border-left: 1px solid #d2d6de;
+}
 .skin-black-light .main-sidebar {
   border-right: 1px solid #d2d6de;
 }
