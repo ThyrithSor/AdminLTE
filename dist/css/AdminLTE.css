@@ -1375,7 +1375,7 @@ a:focus {
 .progress > .progress-bar,
 .progress .progress-bar,
 .progress > .progress-bar .progress-bar {
-  border-radius: 1px;
+  border-radius: 10px;
 }
 /* size variation */
 .progress.sm,
@@ -1386,7 +1386,7 @@ a:focus {
 .progress-sm,
 .progress.sm .progress-bar,
 .progress-sm .progress-bar {
-  border-radius: 1px;
+  border-radius: 5px;
 }
 .progress.xs,
 .progress-xs {
@@ -1396,7 +1396,7 @@ a:focus {
 .progress-xs,
 .progress.xs .progress-bar,
 .progress-xs .progress-bar {
-  border-radius: 1px;
+  border-radius: 3.5px;
 }
 .progress.xxs,
 .progress-xxs {
@@ -1406,7 +1406,7 @@ a:focus {
 .progress-xxs,
 .progress.xxs .progress-bar,
 .progress-xxs .progress-bar {
-  border-radius: 1px;
+  border-radius: 3.5px;
 }
 /* Vertical bars */
 .progress.vertical {
@@ -5620,6 +5620,19 @@ body {
   border-bottom-right-radius: 85px !important;
   border-top-right-radius: 85px !important;
 }
+.sidebar-mini.sidebar-open .sidebar-toggle:before {
+  content: '\f00d';
+}
+@media screen and (min-width: 768px) {
+  .sidebar-mini:not(.sidebar-collapse) .sidebar-toggle:before {
+    content: '\f00d';
+  }
+}
+@media screen and (min-width: 768px) {
+  .sidebar-mini:not(.sidebar-collapse) .main-sidebar {
+    box-shadow: 2px 0 15px #0003;
+  }
+}
 .bg-light-blue,
 .label-primary,
 .modal-primary .modal-body {
@@ -5658,4 +5671,39 @@ body {
 .modal-warning .modal-body {
   background-color: #f8c725 !important;
   background: linear-gradient(90deg, #e3b007 0%, #f8c725 80%, rgba(248, 199, 37, 0.8) 100%) !important;
+}
+.pagination li > a {
+  background-color: #F0F0F0;
+  border: none;
+  color: #202020;
+  z-index: 2;
+}
+.pagination li.active > a {
+  background-color: #4274c0;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px rgba(66, 116, 192, 0.5);
+}
+.pagination li.disabled > a {
+  color: #707070;
+}
+.pagination li:first-child > a,
+.pagination li:last-child > a {
+  border-radius: 16px;
+}
+.pagination li:first-child > a {
+  margin-right: 10px;
+}
+.pagination li:last-child > a {
+  margin-left: 10px;
+}
+.pagination li:nth-child(2) > a {
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+  padding-left: 24px;
+}
+.pagination li:nth-last-child(2) > a {
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+  padding-right: 24px;
 }
