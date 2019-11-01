@@ -170,3 +170,10 @@
     border-left: 1px solid #d2d6de;
   }
 }
+.skin-black-light .main-sidebar .treeview .treeview-menu li.active > a {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  margin-right: 6px;
+  color: black;
+  font-weight: bold;
+}

@@ -150,3 +150,10 @@
     border-left: 1px solid #d2d6de;
   }
 }
+.skin-purple-light .main-sidebar .treeview .treeview-menu li.active > a {
+  background: rgba(96, 92, 168, 0.15);
+  border-radius: 15px;
+  margin-right: 6px;
+  color: black;
+  font-weight: bold;
+}

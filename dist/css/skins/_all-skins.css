@@ -292,6 +292,13 @@
     border-left: 1px solid #d2d6de;
   }
 }
+.skin-blue-light .main-sidebar .treeview .treeview-menu li.active > a {
+  background: rgba(0, 144, 186, 0.15);
+  border-radius: 15px;
+  margin-right: 6px;
+  color: black;
+  font-weight: bold;
+}
 .skin-blue-light .main-footer {
   border-top-color: #d2d6de;
 }
@@ -636,6 +643,13 @@
     border-left: 1px solid #d2d6de;
   }
 }
+.skin-black-light .main-sidebar .treeview .treeview-menu li.active > a {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  margin-right: 6px;
+  color: black;
+  font-weight: bold;
+}
 /*
  * Skin: Green
  * -----------
@@ -921,6 +935,13 @@
   .skin-green-light.sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
     border-left: 1px solid #d2d6de;
   }
+}
+.skin-green-light .main-sidebar .treeview .treeview-menu li.active > a {
+  background: rgba(13, 172, 79, 0.15);
+  border-radius: 15px;
+  margin-right: 6px;
+  color: black;
+  font-weight: bold;
 }
 /*
  * Skin: Red
@@ -1208,6 +1229,13 @@
     border-left: 1px solid #d2d6de;
   }
 }
+.skin-red-light .main-sidebar .treeview .treeview-menu li.active > a {
+  background: rgba(209, 70, 70, 0.15);
+  border-radius: 15px;
+  margin-right: 6px;
+  color: black;
+  font-weight: bold;
+}
 /*
  * Skin: Yellow
  * ------------
@@ -1494,6 +1522,13 @@
     border-left: 1px solid #d2d6de;
   }
 }
+.skin-yellow-light .main-sidebar .treeview .treeview-menu li.active > a {
+  background: rgba(248, 199, 37, 0.15);
+  border-radius: 15px;
+  margin-right: 6px;
+  color: black;
+  font-weight: bold;
+}
 /*
  * Skin: Purple
  * ------------
@@ -1779,4 +1814,11 @@
   .skin-purple-light.sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
     border-left: 1px solid #d2d6de;
   }
+}
+.skin-purple-light .main-sidebar .treeview .treeview-menu li.active > a {
+  background: rgba(96, 92, 168, 0.15);
+  border-radius: 15px;
+  margin-right: 6px;
+  color: black;
+  font-weight: bold;
 }
