@@ -4,16 +4,16 @@
 // COLORS
 // --------------------------------------------------------
 // Primary
-@light-blue: #3c8dbc;
+@light-blue: #0090BA;
 // Danger
-@red: #dd4b39;
+@red: rgb(209, 70, 70);
 // Success
-@green: #00a65a;
+@green: #0dac4f;
 // Info
-@aqua: #00c0ef;
+@aqua: #8badb6;
 // Warning
-@yellow: #f39c12;
-@blue: #0073b7;
+@yellow: #f8c725;
+@blue: #4274c0;
 @navy: #001F3F;
 @teal: #39CCCC;
 @olive: #3D9970;
@@ -24,6 +24,7 @@
 @maroon: #D81B60;
 @black: #111;
 @gray-lte: #d2d6de;
+@very-light-grey: #F0F0F0;
 
 // LAYOUT
 // --------------------------------------------------------
@@ -40,14 +41,14 @@
 @link-hover-color: lighten(@link-color, 15%);
 
 // Body background (Affects main content background only)
-@body-bg: #ecf0f5; // DEPRECATED
-@content-bg: #ecf0f5;
+@body-bg: #f9f8ff; // DEPRECATED
+@content-bg: #f9f8ff;
 
 // SIDEBAR SKINS
 // --------------------------------------------------------
 
 // Dark sidebar
-@sidebar-dark-bg: #222d32;
+@sidebar-dark-bg: #081524;
 @sidebar-dark-hover-bg: darken(@sidebar-dark-bg, 2%);
 @sidebar-dark-color: lighten(@sidebar-dark-bg, 60%);
 @sidebar-dark-hover-color: #fff;
@@ -65,7 +66,7 @@
 @sidebar-light-submenu-hover-color: #000;
 
 // sidebar-expanded-on-hover
-@sidebar-expanded-shadow: 3px 0 8px rgba(0,0,0,.125);
+@sidebar-expanded-shadow: 3px 0 15px rgba(0,0,0,.125);
 
 // CONTROL SIDEBAR
 // --------------------------------------------------------
@@ -74,9 +75,9 @@
 // BOXES
 // --------------------------------------------------------
 @box-border-color: #f4f4f4;
-@box-border-radius: 3px;
+@box-border-radius: 16px;
 @box-footer-bg: #fff;
-@box-boxshadow: 0 1px 1px rgba(0, 0, 0, .1);
+@box-boxshadow: 1px 2px 16px rgba(0,0,0,0.1);
 @box-padding: 10px;
 
 // Box variants
@@ -88,9 +89,9 @@
 
 // PROGRESS BARS
 // --------------------------------------------------------
-@progress-bar-border-radius: 1px;
-@progress-bar-sm-border-radius: 1px;
-@progress-bar-xs-border-radius: 1px;
+@progress-bar-border-radius: 10px;
+@progress-bar-sm-border-radius: 5px;
+@progress-bar-xs-border-radius: 3.5px;
 
 // FORMS
 // --------------------------------------------------------
@@ -100,7 +101,7 @@
 // --------------------------------------------------------
 
 // Border radius for non flat buttons
-@btn-border-radius: 3px;
+@btn-border-radius: 5px;
 
 // HR
 // --------------------------------------------------------
@@ -111,7 +112,7 @@
 // --------------------------------------------------------
 @direct-chat-height: 250px;
 @direct-chat-default-msg-bg: @gray-lte;
-@direct-chat-default-font-color: #444;
+@direct-chat-default-font-color: rgb(44, 44, 44);
 @direct-chat-default-msg-border-color: @gray-lte;
 
 // CHAT WIDGET
@@ -122,7 +123,10 @@
 // --------------------------------------------------------
 
 // Transition global options
+// --------------------------------------------------------
 @transition-speed: .3s;
 @transition-fn: ease-in-out;
 
-@import "themes/round/variables.less";
+// Branding colors
+// --------------------------------------------------------
+@brand-colors: primary @light-blue, info @aqua, danger @red, warning @yellow, success @green, info @gray-lte, default @gray-lte;

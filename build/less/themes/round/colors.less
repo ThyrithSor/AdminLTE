@@ -1,0 +1,11 @@
+@background-colors: yellow, green, red, aqua, light-blue;
+
+.make-background-color(@i: length(@background-colors)) when (@i > 0) {
+    @color: extract(@background-colors, @i);
+    .bg-@{color} {
+        background: linear-gradient(90deg, darken(@@color, 10%) 0%, fade(@@color, 100%) 80%, fade(@@color, 80%) 100%) !important;
+    }
+    .make-background-color(@i - 1);
+}
+
+.make-background-color();

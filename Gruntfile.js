@@ -7,7 +7,7 @@ module.exports = function (grunt) { // jshint ignore:line
     watch : {
       less : {
         // Compiles less files upon saving
-        files: ['build/less/*.less'],
+        files: ['build/less/*.less', 'build/less/themes/*/*.less'],
         tasks: ['less:development', 'less:production', 'replace', 'notify:less']
       },
       js   : {
