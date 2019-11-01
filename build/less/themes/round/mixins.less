@@ -1,24 +1,12 @@
-.skin-dark-sidebar(@link-hover-border-color) {
-    .main-sidebar {
-        .treeview .treeview-menu {
-            li.active > a {
-                background: @link-hover-border-color;
-                border-radius: 15px;
-                margin-right: 6px;
-                color: white;
-            }
-        }
-    }
-}
-
 .skin-light-sidebar(@icon-active-color) {  
     .main-sidebar {
         .treeview .treeview-menu {
             li.active > a {
-                background: @icon-active-color;
+                background: fade(@icon-active-color, 15%);
                 border-radius: 15px;
                 margin-right: 6px;
-                color: white;
+                color: black;
+                font-weight: bold;
             }
         }
     }

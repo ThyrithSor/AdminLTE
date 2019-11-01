@@ -5612,7 +5612,7 @@ body {
   border-bottom-left-radius: 16px;
 }
 .sidebar-form {
-  border: none !important;
+  border-radius: 85px !important;
 }
 .sidebar-form .input-group input[type="text"] {
   border-bottom-left-radius: 85px !important;
